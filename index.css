@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 60px;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header ul li {
+  margin-left: 20px;
+}
+
+.header ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.header ul li a:hover {
+  color: #777;
+}
+
+.header ul li a svg {
+  margin-right: 5px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.heading p {
+  color: #828282;
+}
+
+.goals {
+  display: grid;
+  width: 320px;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0px;
+}
+
+.goal {
+  background-color: none;
+  margin: 0;
+  padding: 10px 10px 10px;
+  position: relative;
+  border: 1px solid #f4f4f4;
+}
+
+.goal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  border: 1px solid #f4f4f4;
+  background: none;
+}
+/* %%%%%%%%%%%%%%%%%%%   post item section   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.commentSection .commentSectionIcon{
+  display: inline;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.postItemTop{
+  display: inline;
+  padding-left: .9em;
+  padding-right: .9em;
+}
+
+.postItemImg{
+  margin-left: 10px;
+  float: left;
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  border: 1px solid rgb(177, 172, 172);
+  font-weight: bolder;
+}
+
+
+.postItemName{
+  float: left;
+  padding-left: .5em;
+  font-size: larger;
+}
+
+.postItemDate{
+  font-size: smaller;
+  float: right;
+  color: rgb(163, 163, 163);
+}
+
+/* curremntly a placeholder for profile img  */
+
+.postText{
+  display: flex;
+  word-wrap: break-word;
+  font-size: 20px;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.postDelete{
+  border: none;
+  background: none;
+  float: right;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.goal:hover .hide{
+  visibility: visible;
+}
+.homeLink{
+  padding-left: 2em;
+}
+
+.commentForm{
+  display: inline;
+}
+
+.discardComment{
+  display: inline;
+  float: right;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.form,
+.content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  padding-left: 2em;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+
+.form-group label {
+  text-align: left;
+  display: block;
+  margin: 0 0 5px 3px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #00B4CC;
+  border-radius: 5px;
+  background: #00B4CC;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn svg {
+  margin-right: 8px;
+}
+
+.btn-reverse {
+  background: #fff;
+  color: #000;
+}
+
+.btn-block {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #000 transparent #555 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+/*%%%%%%%%%%%%%%%%%%%% Organization    PROFILE %%%%%%%%%%%%%%%%%%%% */
+
+
+/* Create three equal columns that floats next to each other */
+.profileColumn {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.profileRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.organizationProfileData ul{
+
+}
+
+.organizationViewSelect ul{
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+hr {
+  margin-bottom: 1.4em;
+}
+
+
+.organizationViewSelect li{
+  display: inline;
+  padding: .8em;
+
+
+}
+.organizationViewSelect li:hover{
+  background-color: rgb(219, 219, 219);
+}
+
+.organizationViewSelect li:active{
+  background-color: #777;
+}
+
+
+.organizationProfileData .liProfileData{
+  display: flex;
+  align-items: center;
+  justify-content: left
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.search {
+  width: 100%;
+  border: 3px solid #00B4CC;
+}
+
+.searchTerm {
+  border: none;
+  width: 100%;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+/* https://codepen.io/huange/pen/bGqMqM    <<-- search bar    */ 
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  float: right;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  /* border-radius: 0 5px 5px 0; */
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 90%;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading p {
+    font-size: 1.5rem;
+  }
+}
